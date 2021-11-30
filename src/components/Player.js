@@ -1,6 +1,6 @@
 import React from 'react';
-import Details from './Details';
 import Control from './Control';
+import Details from './Details';
 
 function Player() {
     return (
