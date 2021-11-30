@@ -5,7 +5,7 @@ import Details from './Details';
 function Player(props) {
  
     const audioElement = useRef(null)
-    const [isplaying, setIsPlaying] = useState(false)
+    const [isPlaying, setIsPlaying] = useState(false)
 
     useEffect(() => {
         if(isPlaying) {
@@ -13,23 +13,33 @@ function Player(props) {
         } else {
             audioElement.current.pause()
         }
-    })
+    });
+
+    const skipSong = (forwards = true)
     
     return (
         <div className="player">
             <h4>Playing Now</h4>
-            <Details />
-            <Control />
+            <Details 
+              song = {props.songs[props.currentSongIndex]}
+            />
+            <Control 
+              isPlaying = {isPlaying}
+              setIsPlaying = {setIsPlaying}
+              skipSong = {skipSong}
+            />
               <audio 
                 className="player__audio"
-                src=""
+                src={props.songs[props.currentSongIndex].src}
+                ref={audioElement}
                 controls
               >
               </audio>
               <p>
                   Next Up: 
                   <span>
-                      Next Song
+                      {props.songs[props.nextSongIndex].title} by { "" }
+                      {props.songs[props.nextSongIndex].artist}
                   </span>
               </p>
         </div>
