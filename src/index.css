@@ -75,3 +75,22 @@ body {
     font-size: 1rem;
 }
 
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.control .control__playButton {
+    display: flex;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #c01818;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
