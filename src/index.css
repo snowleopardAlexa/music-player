@@ -38,6 +38,7 @@ body {
 }
 
 .player > p {
+    margin-top: 20px;
     color: #c9c5c5;
     font-size: 0.8rem;
     text-align: center;
@@ -89,7 +90,7 @@ body {
     border-radius: 50%;
     border: none;
     background-color: #c01818;
-    color: white;
+    color: #f7f0f0;
     font-size: 1.4rem;
     cursor: pointer;
 }
@@ -106,6 +107,40 @@ body {
 audio::-webkit-media-controls-play-button {
     display: none;
 }
+
+audio::-webkit-media-controls-panel {
+    background-color: #c01818;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #f7f0f0;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: #f7f0f0;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: #f7f0f0;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #f7f0f0;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: #f7f0f0;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+  
 
 
 
