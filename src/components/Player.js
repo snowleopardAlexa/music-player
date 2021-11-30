@@ -15,7 +15,7 @@ function Player(props) {
         }
     });
 
-    const skipSong = (forwards = true) => {
+    const skipSong = (forwards = false) => {
         if (forwards) {
             props.setCurrentSongIndex(() => {
                 let temp = props.setCurrentSongIndex;
