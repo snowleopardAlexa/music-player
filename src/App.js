@@ -14,19 +14,19 @@ function App() {
       title: "Show Must Go On",
       artist: "Queen",
       img_src: "./img/showmustgoon.jpeg",
-      src: "./songs/BreakFree.m4a"
+      src: "./songs/ShowMustGoOn.m4a"
     },
     {
       title: "Breakthrough",
       artist: "Queen",
       img_src: "./img/breakthrough.jpeg",
-      src: "./songs/BreakFree.m4a"
+      src: "./songs/Breakthrough.m4a"
     },
     {
       title: "Radio Gaga",
       artist: "Queen",
       img_src: "./img/radiogaga.png",
-      src: "./songs/BreakFree.m4a"
+      src: "./songs/RadioGaga.m4a"
     },
   ])
 
