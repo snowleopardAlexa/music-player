@@ -7,25 +7,25 @@ function App() {
      {
        title: "I Want To Break Free",
        artist: "Queen",
-       img_src: "./img/breakfree.jpg",
+       img_src: "./img/breakfree.jpeg",
        src: "./songs/BreakFree.m4a"
      },
      {
       title: "Show Must Go On",
       artist: "Queen",
-      img_src: "./img/breakfree.jpg",
+      img_src: "./img/showmustgoon.jpeg",
       src: "./songs/BreakFree.m4a"
     },
     {
       title: "Breakthrough",
       artist: "Queen",
-      img_src: "./img/breakfree.jpg",
+      img_src: "./img/breakthrough.jpeg",
       src: "./songs/BreakFree.m4a"
     },
     {
       title: "Radio Gaga",
       artist: "Queen",
-      img_src: "./img/breakfree.jpg",
+      img_src: "./img/radiogaga.png",
       src: "./songs/BreakFree.m4a"
     },
   ])
