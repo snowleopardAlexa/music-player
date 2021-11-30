@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Control from './Control';
 import Details from './Details';
 
-function Player() {
+function Player(props) {
+ 
+    const audioElement = useRef(null)
+    const [isplaying, setIsPlaying] = useState(false)
+
+    
+
     return (
         <div className="player">
             <h4>Playing Now</h4>

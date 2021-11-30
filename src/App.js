@@ -41,11 +41,16 @@ function App() {
         return currentSongIndex + 1
       }
     })
-  }, [])
+  }, [currentSongIndex, songs.length])
 
   return (
     <div className="App">
-       <Player />
+       <Player 
+         currentSongIndex = { currentSongIndex}
+         setCurrentSongIndex = {setCurrentSongIndex}
+         nextSongIndex = {nextSongIndex}
+         songs = {songs}
+       />
     </div>
   );
 }
