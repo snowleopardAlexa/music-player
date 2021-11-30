@@ -94,3 +94,12 @@ body {
     cursor: pointer;
 }
 
+.control .control__skipBtn {
+    border: none;
+    background: none;
+    color: #c01818;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+}
+
