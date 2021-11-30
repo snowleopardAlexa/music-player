@@ -15,7 +15,9 @@ function Player(props) {
         }
     });
 
-    const skipSong = (forwards = true)
+    const SkipSong = (forwards = true) => {
+        
+    }
     
     return (
         <div className="player">
@@ -26,7 +28,7 @@ function Player(props) {
             <Control 
               isPlaying = {isPlaying}
               setIsPlaying = {setIsPlaying}
-              skipSong = {skipSong}
+              skipSong = {SkipSong}
             />
               <audio 
                 className="player__audio"
