@@ -1,3 +1,4 @@
+import React, {useState} from "react";
 import Player from './components/Player';
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
       src: "BreakFree.m4a"
     },
   ])
+
+  const [currentSongIndex, setCurrentSongIndex] = useState(0);
+  const [nextSongIndex, setNextSongIndex] = useState(0);
 
   return (
     <div className="App">
