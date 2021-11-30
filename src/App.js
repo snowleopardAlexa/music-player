@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Player from './components/Player';
 
 function App() {
@@ -32,6 +32,16 @@ function App() {
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [nextSongIndex, setNextSongIndex] = useState(0);
+
+  useEffect(() => {
+    setNextSongIndex(() => {
+      if(currentSongIndex + 1 > songs.length - 1) {
+        return 0
+      } else {
+        return currentSongIndex + 1
+      }
+    })
+  }, [])
 
   return (
     <div className="App">
