@@ -1,15 +1,15 @@
-import { faBackward, faForward, faPause } from '@fortawesome/free-solid-svg-icons';
+import { faBackward, faForward, faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-function Control() {
+function Control(props) {
     return (
         <div className="control">
-           <button className="control__skipBtn">
+           <button className="control__skipBtn" onClick={() => props.skipSong(false)}>
                <FontAwesomeIcon icon={faBackward} />
            </button>
-           <button className="control__playButton">
-               <FontAwesomeIcon icon={faPause} />
+           <button className="control__playButton" onClick={() => props.setIsPlaying(!props.isPlaying)}>
+               <FontAwesomeIcon icon={props.isPlaying ? faPause : faPlay} />
            </button>
            <button className="control__playButton">
                <FontAwesomeIcon icon={faForward} />
