@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #131111;
+    background-color: #111010;
 }
 
 .App {
@@ -21,18 +21,51 @@ body {
 
 .player {
     display: block;
-    background-image: #2b2525;
+    background-image: #c01818;
     margin: 0px auto;
     padding: 30px;
     border-radius: 16px;
     box-shadow: inset -6px -6px 12px rgba(68, 5, 5, 0.8),
       inset 6px 6px 12px rgba(197, 9, 9, 0.4);
-  }
+}
+
+h3 {
+    color: #e7dcdc;
+}
 
 .player > h4 {
-    color: #fff;
-    font-size: 14px;
+    color: #e7dcdc;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-  }
+}
+
+.player > p {
+    color: #c9c5c5;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.player > p span {
+    font-weight: 400;
+    width: fit-content;
+}
+
+.details > .details__img {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.details > .details__img img {
+    display: block;
+    margin: 50px auto;
+    object-fit: contain;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+

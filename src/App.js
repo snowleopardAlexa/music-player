@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Player from './components/Player';
+import './index.css';
 
 function App() {
 
@@ -7,19 +8,19 @@ function App() {
      {
        title: "I Want To Break Free",
        artist: "Queen",
-       img_src: "./img/breakfree.jpeg",
+       img_src: "./img/breakfree.png",
        src: "./songs/BreakFree.m4a"
      },
      {
       title: "Show Must Go On",
       artist: "Queen",
-      img_src: "./img/showmustgoon.jpeg",
+      img_src: "./img/showmustgoon.png",
       src: "./songs/ShowMustGoOn.m4a"
     },
     {
       title: "Breakthrough",
       artist: "Queen",
-      img_src: "./img/breakthrough.jpeg",
+      img_src: "./img/breakthrough.png",
       src: "./songs/Breakthrough.m4a"
     },
     {
