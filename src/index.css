@@ -29,10 +29,6 @@ body {
       inset 6px 6px 12px rgba(197, 9, 9, 0.4);
 }
 
-h3 {
-    color: #e7dcdc;
-}
-
 .player > h4 {
     color: #e7dcdc;
     font-size: 1.2rem;
@@ -68,4 +64,14 @@ h3 {
     border-radius: 50%;
 }
 
+.details > .details__title, .details__artist {
+    color: #f7f0f0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.details > .details__artist {
+    font-weight: 400;
+    font-size: 1rem;
+}
 
