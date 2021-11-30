@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Control from './Control';
+import Controls from './Controls';
 import Details from './Details';
 
 function Player(props) {
@@ -16,7 +16,7 @@ function Player(props) {
     });
 
     const SkipSong = (forwards = true) => {
-        
+
     }
     
     return (
@@ -25,7 +25,7 @@ function Player(props) {
             <Details 
               song = {props.songs[props.currentSongIndex]}
             />
-            <Control 
+            <Controls 
               isPlaying = {isPlaying}
               setIsPlaying = {setIsPlaying}
               skipSong = {SkipSong}
@@ -48,4 +48,4 @@ function Player(props) {
     );
 }
 
-export default Player
+export default Player;
