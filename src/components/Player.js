@@ -15,9 +15,31 @@ function Player(props) {
         }
     });
 
-    const SkipSong = (forwards = true) => {
+    const skipSong = (forwards = true) => {
+        if (forwards) {
+            props.setCurrentSongIndex(() => {
+                let temp = props.setCurrentSongIndex;
+                temp++;
 
-    }
+                if (temp > props.songs.length - 1) {
+                    temp = 0;
+                }
+
+                return temp;
+            });
+        }  else {
+            props.setCurrentSongIndex(() => {
+                let temp = props.currentSongIndex;
+                temp--;
+
+                if (temp < 0) {
+                    temp = props.songs.length - 1;
+                }
+
+                return temp;
+            });
+        }
+    };
     
     return (
         <div className="player">
@@ -28,7 +50,7 @@ function Player(props) {
             <Controls 
               isPlaying = {isPlaying}
               setIsPlaying = {setIsPlaying}
-              skipSong = {SkipSong}
+              skipSong = {skipSong}
             />
               <audio 
                 className="player__audio"
@@ -38,7 +60,7 @@ function Player(props) {
               >
               </audio>
               <p>
-                  Next Up: 
+                  Next Up: {""}
                   <span>
                       {props.songs[props.nextSongIndex].title} by { "" }
                       {props.songs[props.nextSongIndex].artist}
