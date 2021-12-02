@@ -5,11 +5,14 @@ import React from 'react';
 function Control() {
     return (
         <div className="control">
-           <button>
+           <button className="control__skipBtn">
                <FontAwesomeIcon icon={faBackward} />
            </button>
-           <button className="control__playbutton">
+           <button className="control__playButton">
                <FontAwesomeIcon icon={faPause} />
+           </button>
+           <button className="control__playButton">
+               <FontAwesomeIcon icon={faForward} />
            </button>
         </div>
     )
