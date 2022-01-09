@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+## Getting Started with Create React App
 
-This is music player made with React hooks. 
+This is a music player made with React hooks. 
