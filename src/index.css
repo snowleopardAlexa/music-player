@@ -11,7 +11,7 @@ body {
     background-color: #111010;
 }
 
-.App {
+.app {
     display: flex;
     align-items: center;
     justify-content: center;
